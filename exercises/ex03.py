@@ -1,5 +1,5 @@
-
-
+"""EX02 - Structured Wordle."""
+__author__ = "730558551"
 
 
 
@@ -40,7 +40,7 @@ def emojified(GSS: str, SW: str) -> str:
 
 def input_guess(expctd_lngth: int) -> str:
     """Checks if user's guess is the correct length"""
-    guess: str = inputs("Enter a " + str(expctd_lngth) + " letter word: ")
+    guess: str = input("Enter a " + str(expctd_lngth) + " letter word: ")
     while len(guess) != expctd_lngth:
         guess = input("That wasn't " + str(expctd_lngth) + " chars! Try again: ") 
     return guess
